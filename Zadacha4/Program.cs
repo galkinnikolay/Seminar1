@@ -4,6 +4,7 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
+int max = 0;
 Console.Write("Введите a: ");
 string text1 = Console.ReadLine();
 int number1 = Convert.ToInt32(text1);
@@ -14,13 +15,16 @@ Console.Write("Введите c: ");
 string text3 = Console.ReadLine();
 int number3 = Convert.ToInt32(text3);
 
-if (number1 < number2 < number 3)
+if (number1 > max)
 {
- Console.Write("Max число: ");
- Console.Write(number2);
+ max = number1;
 }
-else
+if (number2 > max)
 {
- Console.Write("Max число: ");
- Console.Write(number1);
+ max = number2;
 }
+if (number3 > max)
+{
+    max = number3;
+}
+Console.WriteLine("max = " + max);
