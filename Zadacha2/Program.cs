@@ -13,11 +13,11 @@ int number2 = Convert.ToInt32(text2);
 
 if (number1 < number2)
 {
- Console.WriteLine("Max число: ");
- Сonsole.WriteLine(number2);
+ Console.Write("Max число: ");
+ Console.Write(number2);
 }
 else
 {
- Console.WriteLine("Max число: ");
- Console.WriteLine(number1); 
+ Console.Write("Max число: ");
+ Console.Write(number1);
 }
